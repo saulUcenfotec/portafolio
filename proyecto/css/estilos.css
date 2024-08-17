@@ -30,9 +30,7 @@ li .active a{
     color:white !important;
 }
 
-body{
-    background-color:var(--principal) !important;
-}
+
 
 .content-page {
     width: 100%;
@@ -77,4 +75,25 @@ body{
 .contacto{
     margin-top: 8%;
     box-shadow: none;
+}
+
+#sobreMi section{
+    margin-top: 10% !important;
+    margin: 5%;
+}
+
+ /* Fondo animado */
+ @keyframes gradientAnimation {
+    0% { background-color: #EDD8B7; }
+    50% { background-color: #F8F4F1; }
+    100% { background-color: #EDD8B7; }
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #EDD8B7;
+    animation: gradientAnimation 10s ease infinite alternate;
+    font-family: Arial, sans-serif;
+    color: #333;
 }

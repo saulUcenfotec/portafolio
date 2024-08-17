@@ -9,10 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
             contentPages.forEach(pane => {
                 pane.classList.remove('show');
+                pane.classList.remove('d-none');
             });
 
             setTimeout(() => {
                 targetPane.classList.add('show');
+                targetPane.classList.add('d-none');
             }, 1);
         });
     });
